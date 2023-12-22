@@ -30,7 +30,7 @@ const TodoList = () => {
         if (task.trim().length === 0) {
             alert("Please enter a task");
         } else {
-            dispatch(updateTodo({
+            dispatch(addTodo({
                 task: task,
                 id: Date.now(),
             })
